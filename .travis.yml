@@ -6,7 +6,7 @@ podfile: Podfile
 notifications:
   email: false
 before_install:
-  - gem install cocoapods
+  - gem install cocoapods --pre
   - pod install
 script:
   - set -o pipefail && xcodebuild test -workspace PrimeFactors.xcworkspace -scheme PrimeFactors -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
