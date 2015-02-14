@@ -1,4 +1,6 @@
 language: objc
+rvm:
+  - 2.0.0
 cache: cocoapods
 podfile: Podfile
 notifications:
