@@ -1,4 +1,4 @@
-language: objc
+language: objective-c
 cache: cocoapods
 podfile: Podfile
 notifications:
