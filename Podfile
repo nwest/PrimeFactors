@@ -1,5 +1,7 @@
 platform :ios, '8.0'
 
+pod 'Underscore.m', '~> 0.2'
+
 target 'PrimeFactors' do
 
 end

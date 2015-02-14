@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		352D6B1E2A24CE702393F856 /* libPods-PrimeFactorsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41325D095D3FE7E219ACD523 /* libPods-PrimeFactorsTests.a */; };
+		455E3E15DCFA4CE2B388A527 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC99FDF50B56977C493283D /* libPods.a */; };
 		E7DED9051A8FA0060046F995 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DED9041A8FA0060046F995 /* main.m */; };
 		E7DED9081A8FA0060046F995 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DED9071A8FA0060046F995 /* AppDelegate.m */; };
 		E7DED90B1A8FA0060046F995 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DED90A1A8FA0060046F995 /* ViewController.m */; };
 		E7DED90E1A8FA0060046F995 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7DED90C1A8FA0060046F995 /* Main.storyboard */; };
 		E7DED9101A8FA0060046F995 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7DED90F1A8FA0060046F995 /* Images.xcassets */; };
 		E7DED9131A8FA0060046F995 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7DED9111A8FA0060046F995 /* LaunchScreen.xib */; };
+		E7FE232B1A8FA78D00F14E9A /* PrimeFactors.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FE232A1A8FA78D00F14E9A /* PrimeFactors.m */; };
+		E7FE232D1A8FA92400F14E9A /* PrimeFactorsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FE232C1A8FA92400F14E9A /* PrimeFactorsTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		195630B7000E9214C2BD676E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		41325D095D3FE7E219ACD523 /* libPods-PrimeFactorsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PrimeFactorsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69E29B3376CCAE5344DBBF1B /* Pods-PrimeFactorsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrimeFactorsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PrimeFactorsTests/Pods-PrimeFactorsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		951D4961A528392BA8611591 /* Pods-PrimeFactorsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrimeFactorsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PrimeFactorsTests/Pods-PrimeFactorsTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -42,6 +46,11 @@
 		E7DED9121A8FA0060046F995 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		E7DED9181A8FA0060046F995 /* PrimeFactorsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrimeFactorsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7DED91D1A8FA0060046F995 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7FE23291A8FA78D00F14E9A /* PrimeFactors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrimeFactors.h; sourceTree = "<group>"; };
+		E7FE232A1A8FA78D00F14E9A /* PrimeFactors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrimeFactors.m; sourceTree = "<group>"; };
+		E7FE232C1A8FA92400F14E9A /* PrimeFactorsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrimeFactorsTests.m; sourceTree = "<group>"; };
+		FCF949FD22AAF8F31C73A040 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		FEC99FDF50B56977C493283D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				455E3E15DCFA4CE2B388A527 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +78,8 @@
 			children = (
 				69E29B3376CCAE5344DBBF1B /* Pods-PrimeFactorsTests.debug.xcconfig */,
 				951D4961A528392BA8611591 /* Pods-PrimeFactorsTests.release.xcconfig */,
+				195630B7000E9214C2BD676E /* Pods.debug.xcconfig */,
+				FCF949FD22AAF8F31C73A040 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -76,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				41325D095D3FE7E219ACD523 /* libPods-PrimeFactorsTests.a */,
+				FEC99FDF50B56977C493283D /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -111,6 +124,8 @@
 				E7DED90F1A8FA0060046F995 /* Images.xcassets */,
 				E7DED9111A8FA0060046F995 /* LaunchScreen.xib */,
 				E7DED9021A8FA0060046F995 /* Supporting Files */,
+				E7FE23291A8FA78D00F14E9A /* PrimeFactors.h */,
+				E7FE232A1A8FA78D00F14E9A /* PrimeFactors.m */,
 			);
 			path = PrimeFactors;
 			sourceTree = "<group>";
@@ -128,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				E7DED91C1A8FA0060046F995 /* Supporting Files */,
+				E7FE232C1A8FA92400F14E9A /* PrimeFactorsTests.m */,
 			);
 			path = PrimeFactorsTests;
 			sourceTree = "<group>";
@@ -147,9 +163,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E7DED9221A8FA0060046F995 /* Build configuration list for PBXNativeTarget "PrimeFactors" */;
 			buildPhases = (
+				DE04CE0FC12E574BEBC962D3 /* Check Pods Manifest.lock */,
 				E7DED8FB1A8FA0060046F995 /* Sources */,
 				E7DED8FC1A8FA0060046F995 /* Frameworks */,
 				E7DED8FD1A8FA0060046F995 /* Resources */,
+				590C80079FB0376F005ABE91 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -238,7 +256,37 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		590C80079FB0376F005ABE91 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		674D22DE2621A1720074E51D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DE04CE0FC12E574BEBC962D3 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -275,6 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7FE232B1A8FA78D00F14E9A /* PrimeFactors.m in Sources */,
 				E7DED90B1A8FA0060046F995 /* ViewController.m in Sources */,
 				E7DED9081A8FA0060046F995 /* AppDelegate.m in Sources */,
 				E7DED9051A8FA0060046F995 /* main.m in Sources */,
@@ -285,6 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7FE232D1A8FA92400F14E9A /* PrimeFactorsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +446,7 @@
 		};
 		E7DED9231A8FA0060046F995 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 195630B7000E9214C2BD676E /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PrimeFactors/Info.plist;
@@ -406,6 +457,7 @@
 		};
 		E7DED9241A8FA0060046F995 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCF949FD22AAF8F31C73A040 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PrimeFactors/Info.plist;
