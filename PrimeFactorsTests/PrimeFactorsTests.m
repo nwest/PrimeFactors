@@ -29,6 +29,14 @@ BOOL PrimeNumber(NSInteger integer) {
     return YES;
 };
 
+BOOL (^nonPrime)(NSNumber *) = ^BOOL(NSNumber *number) {
+    return !PrimeNumber([number integerValue]);
+};
+
+NSNumber *(^multiply)(NSNumber *, NSNumber *) = ^NSNumber *(NSNumber *x, NSNumber *y) {
+    return @([x integerValue] * [y integerValue]);
+};
+
 @interface PrimeFactorsTests : XCTestCase
 
 @end
@@ -40,17 +48,13 @@ BOOL PrimeNumber(NSInteger integer) {
         NSArray *primeFactors = PrimeFactors([number integerValue]);
         NSLog(@"input: %@ result: %@", number, primeFactors);
 
-        NSArray *nonPrimes = Underscore.filter(primeFactors, ^BOOL(NSNumber *number){
-            return !PrimeNumber([number integerValue]);
-        });
+        NSArray *nonPrimes = Underscore.filter(primeFactors, nonPrime);
 
         if ([nonPrimes count] > 0) {
             return NO;
         }
 
-        NSNumber *total = Underscore.reduce(primeFactors, @1, ^(NSNumber *total, NSNumber *next) {
-            return @([total integerValue] * [next integerValue]);
-        });
+        NSNumber *total = Underscore.reduce(primeFactors, @1, multiply);
 
         if (![total isEqualToNumber:number]) {
             return NO;
