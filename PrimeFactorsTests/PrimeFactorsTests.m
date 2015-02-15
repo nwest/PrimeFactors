@@ -13,6 +13,8 @@
 
 #import "PrimeFactors.h"
 
+#define _ Underscore
+
 BOOL PrimeNumber(NSInteger integer) {
     if (integer == 0 || integer == 1) {
         return NO;
@@ -45,17 +47,15 @@ NSNumber *(^multiply)(NSNumber *, NSNumber *) = ^NSNumber *(NSNumber *x, NSNumbe
 
 - (void)testPrimeFactors {
     FOXAssert(FOXForAll(FOXStrictPositiveInteger(), ^BOOL(NSNumber *number) {
-        NSArray *primeFactors = PrimeFactors([number integerValue]);
-        NSLog(@"input: %@ result: %@", number, primeFactors);
+        NSArray *factors = PrimeFactors([number integerValue]);
+        NSLog(@"input: %@ result: %@", number, factors);
 
-        NSArray *nonPrimes = Underscore.filter(primeFactors, nonPrime);
-
-        if ([nonPrimes count] > 0) {
+        BOOL hasNonPrimes = _.any(factors, nonPrime);
+        if (hasNonPrimes) {
             return NO;
         }
 
-        NSNumber *total = Underscore.reduce(primeFactors, @1, multiply);
-
+        NSNumber *total = _.reduce(factors, @1, multiply);
         if (![total isEqualToNumber:number]) {
             return NO;
         }
