@@ -1,9 +1,8 @@
 language: objective-c
-cache: cocoapods
 notifications:
   email: false
 install:
-  - bundle install
+  - bundle install --jobs=3 --retry=3 --deployment
   - bundle exec pod install
 script:
   - xcodebuild test -workspace PrimeFactors.xcworkspace -scheme PrimeFactors -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
