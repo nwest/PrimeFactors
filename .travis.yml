@@ -1,10 +1,8 @@
 language: objective-c
-cache: cocoapods
-podfile: Podfile
 notifications:
   email: false
-before_install:
-  - gem install cocoapods
-  - pod install
+install:
+  - bundle install --jobs=3 --retry=3 --deployment
+  - bundle exec pod install
 script:
-  - set -o pipefail && xcodebuild test -workspace PrimeFactors.xcworkspace -scheme PrimeFactors -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+  - xcodebuild test -workspace PrimeFactors.xcworkspace -scheme PrimeFactors -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
