@@ -6,7 +6,5 @@ notifications:
 before_install:
   - gem install cocoapods --no-rdoc --no-ri --no-document
   - pod install
-install:
-  - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
 script:
-  - set -o pipefail && xcodebuild test -workspace PrimeFactors.xcworkspace -scheme PrimeFactors -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty -c
+  - xcodebuild test -workspace PrimeFactors.xcworkspace -scheme PrimeFactors -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
